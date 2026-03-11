@@ -2,21 +2,14 @@
 <html>
 <body>
 
-<h1>Kalkulačka</h1>
+<h1>Figury a tropy</h1>
 
-<input id="a">
-<input id="b">
-<button onclick="spocitat()">Sečíst</button>
-
+<p id="otazka"></p>
+<input id="odpoved">
+<button onclick="zkontroluj()">Odpovědět</button>
 <p id="vysledek"></p>
 
-<script>
-function spocitat() {
-  let a = Number(document.getElementById("a").value);
-  let b = Number(document.getElementById("b").value);
-  document.getElementById("vysledek").innerText = a + b;
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
