@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Můj web</title>
-</head>
 <body>
 
-<h1>Vítej na mém webu</h1>
-<p>Toto je moje druhá stránka.</p>
+<h1>Kalkulačka</h1>
+
+<input id="a">
+<input id="b">
+<button onclick="spocitat()">Sečíst</button>
+
+<p id="vysledek"></p>
+
+<script>
+function spocitat() {
+  let a = Number(document.getElementById("a").value);
+  let b = Number(document.getElementById("b").value);
+  document.getElementById("vysledek").innerText = a + b;
+}
+</script>
 
 </body>
 </html>
